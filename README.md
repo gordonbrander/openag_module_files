@@ -1,5 +1,5 @@
-openag\_fixtures
-================
+openag\_module_files
+====================
 
 A collection of module files for flashing OpenAg sensor firmware.
 
@@ -16,5 +16,7 @@ First, install `openag_python` (>0.1.5):
 
 Then:
 
-    openag firmware flash -f openag_fixtures/default.json -f openag_fixtures/personal_food_computer_v2.json
+    openag firmware flash -f openag_module_files/default.json -f openag_module_files/personal_food_computer_v2.json
 
+Note how multiple files can be specified. JSON structures are deeply merged
+when multiple files are specified.
