@@ -20,3 +20,9 @@ Then:
 
 Note how multiple files can be specified. JSON structures are deeply merged
 when multiple files are specified.
+
+You can also install it as a standalone flash tool:
+
+    git clone https://github.com/openaginitiative/openag_module_files.git
+    cd openag_module_files
+    pip install -e .[flash]
