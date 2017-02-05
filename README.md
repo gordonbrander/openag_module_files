@@ -23,6 +23,6 @@ when multiple files are specified.
 
 You can also install it as a standalone flash tool:
 
-    git clone https://github.com/openaginitiative/openag_module_files.git
-    cd openag_module_files
+    git clone https://github.com/openaginitiative/openag_python.git
+    cd openag_python
     pip install -e .[flash]
