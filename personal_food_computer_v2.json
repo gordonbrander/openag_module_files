@@ -26,7 +26,12 @@
       "_id": "led_white_1",
       "arguments": [41, true],
       "environment": "environment_1",
-      "type": "pwm_actuator"
+      "type": "pwm_actuator",
+      "inputs": {
+        "cmd": {
+          "variable": "light_illuminance"
+        }
+      }
     },
     {
       "_id": "pump_1_nutrient_a_1",
@@ -165,7 +170,12 @@
       "_id": "air_flush_1",
       "arguments": [36, true],
       "environment": "environment_1",
-      "type": "binary_actuator"
+      "type": "binary_actuator",
+      "inputs": {
+        "cmd": {
+          "variable": "air_flush_on"
+        }
+      }
     },
     {
       "_id": "atlas_ec_1",
@@ -240,6 +250,14 @@
       "environment": "environment_1",
       "parameters": {
         "variable": "nutrient_flora_duo_b"
+      }
+    },
+    {
+      "_id": "air_flush_on_controller_1",
+      "type": "openag_brain:direct_controller.py",
+      "environment": "environment_1",
+      "parameters": {
+        "variable": "air_flush_on"
       }
     },
     {
